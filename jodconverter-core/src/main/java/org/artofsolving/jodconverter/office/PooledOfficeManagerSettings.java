@@ -14,30 +14,30 @@ package org.artofsolving.jodconverter.office;
 
 class PooledOfficeManagerSettings extends ManagedOfficeProcessSettings {
 
-    public static final long DEFAULT_TASK_EXECUTION_TIMEOUT = 120000L;
-    public static final int DEFAULT_MAX_TASKS_PER_PROCESS = 200;
+	public static final long DEFAULT_TASK_EXECUTION_TIMEOUT = 120000L;
+	public static final int DEFAULT_MAX_TASKS_PER_PROCESS = 200;
 
-    private long taskExecutionTimeout = DEFAULT_TASK_EXECUTION_TIMEOUT;
-    private int maxTasksPerProcess = DEFAULT_MAX_TASKS_PER_PROCESS;
+	private long taskExecutionTimeout = DEFAULT_TASK_EXECUTION_TIMEOUT;
+	private int maxTasksPerProcess = DEFAULT_MAX_TASKS_PER_PROCESS;
 
-    public PooledOfficeManagerSettings(UnoUrl unoUrl) {
-        super(unoUrl);
-    }
+	public PooledOfficeManagerSettings( final UnoUrl unoUrl ) {
+		super( unoUrl );
+	}
 
-    public long getTaskExecutionTimeout() {
-        return taskExecutionTimeout;
-    }
+	public long getTaskExecutionTimeout() {
+		return taskExecutionTimeout;
+	}
 
-    public void setTaskExecutionTimeout(long taskExecutionTimeout) {
-        this.taskExecutionTimeout = taskExecutionTimeout;
-    }
+	public void setTaskExecutionTimeout( final long taskExecutionTimeout ) {
+		this.taskExecutionTimeout = taskExecutionTimeout;
+	}
 
-    public int getMaxTasksPerProcess() {
-        return maxTasksPerProcess;
-    }
+	public int getMaxTasksPerProcess() {
+		return maxTasksPerProcess;
+	}
 
-    public void setMaxTasksPerProcess(int maxTasksPerProcess) {
-        this.maxTasksPerProcess = maxTasksPerProcess;
-    }
+	public void setMaxTasksPerProcess( final int maxTasksPerProcess ) {
+		this.maxTasksPerProcess = maxTasksPerProcess;
+	}
 
 }
